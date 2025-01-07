@@ -31,7 +31,8 @@ def draw_l():
     """Desenhar a estrada na tela."""
     # Triângulo principal (estrada)
     main_road_points = [
-            (pers_x,pers_y),  
+            (pers_x-40,pers_y),
+            (pers_x+40,pers_y),  
             (SCREEN_WIDTH , SCREEN_HEIGHT), 
             (0,SCREEN_HEIGHT )
           
@@ -39,8 +40,8 @@ def draw_l():
     pygame.draw.polygon(tela, LANE_COLOR, main_road_points)
 
     
-    pygame.draw.line(tela, LANE_COLOR, (SCREEN_WIDTH, SCREEN_HEIGHT), (pers_x, pers_y), 1)
-    pygame.draw.line(tela, LANE_COLOR, (0, SCREEN_HEIGHT), (pers_x, pers_y), 1)
+    #pygame.draw.line(tela, LANE_COLOR, (SCREEN_WIDTH, SCREEN_HEIGHT), (pers_x, pers_y), 1)
+    #pygame.draw.line(tela, LANE_COLOR, (0, SCREEN_HEIGHT), (pers_x, pers_y), 1)
     
     
     
