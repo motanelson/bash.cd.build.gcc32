@@ -1,6 +1,5 @@
-# car.race
+# iso.builder.bash 
 
-
-cursor keys
+bash builder to genarete a .iso from a empty image of cdrom
 
 
